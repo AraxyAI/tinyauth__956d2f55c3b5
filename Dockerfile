@@ -20,7 +20,7 @@ COPY ./frontend/vite.config.ts ./
 RUN bun run build
 
 # Builder
-FROM golang:1.26-alpine3.23 AS builder
+FROM golang:1.27-alpine3.23 AS builder
 
 ARG VERSION
 ARG COMMIT_HASH
